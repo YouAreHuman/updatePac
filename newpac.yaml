@@ -35,15 +35,15 @@
   skip-cert-verify: true
   sni: www.microsoft.com
   servername: www.microsoft.com
-- name: SS节点-ipv6
-  type: ss
-  server: 2a14:7584:d0a1::a
-  port: 12345
-  password: alvin9999.com
-  cipher: aes-256-gcm
 - name: newpac-SS-ipv6
   type: ss
   server: 2a14:7584:d0a1::a
   port: 12345
   password: fan3.380227.xyz
+  cipher: aes-256-gcm
+- name: SS节点-ipv6
+  type: ss
+  server: 2a14:7584:d0a1::a
+  port: 12345
+  password: alvin9999.com
   cipher: aes-256-gcm
