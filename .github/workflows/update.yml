@@ -9,7 +9,7 @@ on:
   # 注意：GitHub Actions 使用 UTC 时间。如果你需要北京时间 (UTC+8)，请自行换算。
   # 下面是 UTC 时间的每4小时：
   schedule:
-    - cron: '0 0,4,8,12,16,20 * * *'
+    - cron: '0 16,20,0,4,8,12 * * *'
   
   # 允许手动触发测试
   workflow_dispatch:
@@ -87,8 +87,12 @@ jobs:
           fi
           echo "✅ 脚本执行完成，newpac.yaml 已生成"
 
+      # - name: Use output
+      #   run: |
+      #     echo "Result was ${{ steps.run_script.outputs.needCommit}}"
       # 8. 比较文件并自动 Push
       - name: Check changes and Push
+        if: ${{ steps.run_script.outputs.needCommit == 1 }}
         run: |
           # 配置 Git 用户信息
           git config --global user.name "github-actions[bot]"
@@ -103,6 +107,7 @@ jobs:
           # 如果有输出（例如 ?? newpac.yaml 表示新文件），说明有变化。
           # 初始化标记变量
           HAS_CHANGES=false
+
 
           # --- 第一步：检查已跟踪文件的内容差异 ---
           # 如果文件已存在且被修改，git diff 会返回非零 (有差异)
