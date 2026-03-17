@@ -35,18 +35,15 @@
   skip-cert-verify: true
   sni: www.microsoft.com
   servername: www.microsoft.com
-- name: PL【机场推荐：https://a9a.xyz】66
-  type: vless
-  server: pl0.nerpvpn.net
-  port: 443
-  uuid: 79cc33cf-93b4-419b-9e46-33e3edf7057c
-  network: ws
-  skip-cert-verify: false
-  ws-opts:
-    path: /
 - name: SS节点-ipv6
   type: ss
   server: 2a14:7584:d0a1::a
   port: 12345
   password: alvin9999.com
+  cipher: aes-256-gcm
+- name: newpac-SS-ipv6
+  type: ss
+  server: 2a14:7584:d0a1::a
+  port: 12345
+  password: fan3.380227.xyz
   cipher: aes-256-gcm
