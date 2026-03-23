@@ -1,18 +1,18 @@
 - name: VLESS节点1-xhttp-reality
   type: vless
-  server: 157.254.223.64
-  port: 23000
-  uuid: bcb13ecb-4f63-4257-ae01-ec5aeaa613a5
+  server: 111.243.102.83
+  port: 34500
+  uuid: 8b66e552-e89d-4c4f-bb5a-e3d37bf151b8
   network: xhttp
   tls: true
   skip-cert-verify: false
-  servername: mxj.myanimelist.net
+  servername: 'www.lovelive-anime.jp '
   client-fingerprint: chrome
   xhttp-opts:
-    path: /fan3.206102.xyz
+    path: /ZTwhzkrWeLnk5ARp8SsoVlVMGn6cSDq8CElbAniRQ9dMR
   reality-opts:
-    public-key: dJFLqPCinyadJxJk7zA_DwBOEAvexvm7AZT2Pw84_EY
-    short-id: 955275866feece09
+    public-key: Yg6kOijRv1IbFcwhY0WmwJ8KW7YTtux4QlQhekEzNEQ
+    short-id: 3a1381d1b2cc9e19
     spider-x: /
 - name: VMESS节点2-ipv6
   type: vmess
@@ -35,15 +35,15 @@
   skip-cert-verify: true
   sni: www.microsoft.com
   servername: www.microsoft.com
-- name: SS节点-ipv6
-  type: ss
-  server: 2a14:7584:d0a1::a
-  port: 12345
-  password: alvin9999.com
-  cipher: aes-256-gcm
 - name: newpac-SS-ipv6
   type: ss
   server: 2a14:7584:d0a1::a
   port: 12345
   password: fan3.380227.xyz
+  cipher: aes-256-gcm
+- name: SS节点-ipv6
+  type: ss
+  server: 2a14:7584:d0a1::a
+  port: 12345
+  password: alvin9999.com
   cipher: aes-256-gcm
