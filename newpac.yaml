@@ -1,0 +1,49 @@
+- name: VLESS节点1-xhttp-reality
+  type: vless
+  server: 157.254.223.64
+  port: 23000
+  uuid: bcb13ecb-4f63-4257-ae01-ec5aeaa613a5
+  network: xhttp
+  tls: true
+  skip-cert-verify: false
+  servername: mxj.myanimelist.net
+  client-fingerprint: chrome
+  xhttp-opts:
+    path: /fan3.206102.xyz
+  reality-opts:
+    public-key: dJFLqPCinyadJxJk7zA_DwBOEAvexvm7AZT2Pw84_EY
+    short-id: 955275866feece09
+    spider-x: /
+- name: VMESS节点2-ipv6
+  type: vmess
+  server: 2a14:7584:d0a2::a
+  port: 23456
+  uuid: bd48e0ac-e90e-4451-a4f2-abf061cfb890
+  cipher: auto
+  alterId: 0
+  network: ws
+  tls: false
+  ws-opts:
+    path: /alvin9999.com
+    headers:
+      Host: www.bing.com
+- name: Hysteria2节点3-ipv6
+  type: hysteria2
+  server: 2a14:7583:295c::a
+  port: 11130
+  password: dongtaiwang.com
+  skip-cert-verify: true
+  sni: www.microsoft.com
+  servername: www.microsoft.com
+- name: SS节点-ipv6
+  type: ss
+  server: 2a14:7584:d0a1::a
+  port: 12345
+  password: alvin9999.com
+  cipher: aes-256-gcm
+- name: newpac-SS-ipv6
+  type: ss
+  server: 2a14:7584:d0a1::a
+  port: 12345
+  password: fan3.380227.xyz
+  cipher: aes-256-gcm
