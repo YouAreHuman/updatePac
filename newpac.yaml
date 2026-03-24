@@ -1,19 +1,18 @@
-- name: VLESS节点1-xhttp-reality
+- name: VLESS-xhttp-Reality-Vision
   type: vless
   server: 111.243.102.83
-  port: 34500
-  uuid: 8b66e552-e89d-4c4f-bb5a-e3d37bf151b8
+  port: 18255
+  uuid: 58698812-5016-458c-9b21-6e33d575f84d
   network: xhttp
   tls: true
   skip-cert-verify: false
-  servername: 'www.lovelive-anime.jp '
+  servername: www.cloudflare.com
   client-fingerprint: chrome
   xhttp-opts:
-    path: /ZTwhzkrWeLnk5ARp8SsoVlVMGn6cSDq8CElbAniRQ9dMR
+    path: /z2zMtbJD
   reality-opts:
-    public-key: Yg6kOijRv1IbFcwhY0WmwJ8KW7YTtux4QlQhekEzNEQ
-    short-id: 3a1381d1b2cc9e19
-    spider-x: /
+    public-key: z1_FVLAxN66t1373faq2D-BV8B7CyILrwc0vMiYw9Cc
+    short-id: d3c7911a
 - name: VMESS节点2-ipv6
   type: vmess
   server: 2001:bc8:32d7:225::1
