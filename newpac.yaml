@@ -16,7 +16,7 @@
     spider-x: /
 - name: VMESS节点2-ipv6
   type: vmess
-  server: 2a14:7584:d0a2::a
+  server: 2001:bc8:32d7:225::1
   port: 23456
   uuid: bd48e0ac-e90e-4451-a4f2-abf061cfb890
   cipher: auto
@@ -29,8 +29,8 @@
       Host: www.bing.com
 - name: Hysteria2节点3-ipv6
   type: hysteria2
-  server: 2a14:7583:295c::a
-  port: 11130
+  server: 2604:6600::5cb
+  port: 22288
   password: dongtaiwang.com
   skip-cert-verify: true
   sni: www.microsoft.com
@@ -43,7 +43,7 @@
   cipher: aes-256-gcm
 - name: SS节点-ipv6
   type: ss
-  server: 2a14:7584:d0a1::a
+  server: 2001:bc8:32d7:225::2
   port: 12345
   password: alvin9999.com
   cipher: aes-256-gcm
