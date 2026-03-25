@@ -1,6 +1,6 @@
 - name: VLESS-xhttp-Reality-Vision
   type: vless
-  server: 111.243.102.83
+  server: 111.243.110.11
   port: 18255
   uuid: 58698812-5016-458c-9b21-6e33d575f84d
   network: xhttp
@@ -34,15 +34,15 @@
   skip-cert-verify: true
   sni: www.microsoft.com
   servername: www.microsoft.com
-- name: newpac-SS-ipv6
-  type: ss
-  server: 2a14:7584:d0a1::a
-  port: 12345
-  password: fan3.380227.xyz
-  cipher: aes-256-gcm
 - name: SS节点-ipv6
   type: ss
   server: 2001:bc8:32d7:225::2
   port: 12345
   password: alvin9999.com
+  cipher: aes-256-gcm
+- name: newpac-SS-ipv6
+  type: ss
+  server: 2a14:7584:d0a1::a
+  port: 12345
+  password: fan3.380227.xyz
   cipher: aes-256-gcm
