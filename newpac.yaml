@@ -1,6 +1,6 @@
 - name: VLESS-xhttp-Reality-Vision
   type: vless
-  server: 195.154.56.101
+  server: 62.210.24.143
   port: 32202
   uuid: 28148be2-61a7-4f36-8adb-030cc9f82bd0
   network: xhttp
@@ -28,7 +28,7 @@
       Host: www.bing.com
 - name: Hysteria2节点
   type: hysteria2
-  server: 195.154.54.131
+  server: 62.210.25.116
   port: 40022
   password: dongtaiwang.com
   skip-cert-verify: true
