@@ -28,7 +28,7 @@
       Host: www.bing.com
 - name: Hysteria2节点
   type: hysteria2
-  server: 62.210.25.116
+  server: 62.210.30.179
   port: 40022
   password: dongtaiwang.com
   skip-cert-verify: true
