@@ -13,11 +13,11 @@
   reality-opts:
     public-key: bGe_-nAtOq6_w_2mv6pcmD8RzJP65Tti-vyMP2hAwDc
     short-id: f57d8f26
-- name: vmess-ws-warp
+- name: vmess-ws
   type: vmess
-  server: 2a14:7584:d117::a
-  port: 27802
-  uuid: b9887ee9-606b-4665-a4ea-7443ca049a68
+  server: 2a14:7584:d118::a
+  port: 10736
+  uuid: 2b8e0bfe-0fb2-475b-91db-824b2f4e9a1b
   cipher: auto
   alterId: 0
   network: ws
