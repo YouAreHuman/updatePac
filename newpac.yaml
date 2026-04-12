@@ -13,19 +13,17 @@
   reality-opts:
     public-key: bGe_-nAtOq6_w_2mv6pcmD8RzJP65Tti-vyMP2hAwDc
     short-id: f57d8f26
-- name: VMESS节点2-ipv6
+- name: vmess-ws-warp
   type: vmess
-  server: 2001:bc8:32d7:225::1
-  port: 23456
-  uuid: bd48e0ac-e90e-4451-a4f2-abf061cfb890
+  server: 2a14:7584:d117::a
+  port: 27802
+  uuid: b9887ee9-606b-4665-a4ea-7443ca049a68
   cipher: auto
   alterId: 0
   network: ws
   tls: false
   ws-opts:
-    path: /alvin9999.com
-    headers:
-      Host: www.bing.com
+    path: /github.com/Alvin9999-newpac/fanqiang
 - name: Hysteria2节点
   type: hysteria2
   server: 163.172.113.118
@@ -36,9 +34,9 @@
   servername: www.microsoft.com
 - name: SS节点-ipv6
   type: ss
-  server: 2001:bc8:32d7:225::2
-  port: 12345
-  password: alvin9999.com
+  server: 2a14:7584:d118::a
+  port: 11111
+  password: github.com/Alvin9999-newpac/fanqiang
   cipher: aes-256-gcm
 - name: newpac-SS-ipv6
   type: ss
