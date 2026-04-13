@@ -1,18 +1,18 @@
 - name: VLESS-xhttp-Reality-Vision
   type: vless
-  server: 62.210.24.143
-  port: 32202
-  uuid: 28148be2-61a7-4f36-8adb-030cc9f82bd0
+  server: 178.18.147.163
+  port: 15530
+  uuid: ac121f97-544b-47b3-bf91-eca9c45db548
   network: xhttp
   tls: true
   skip-cert-verify: false
-  servername: www.amazon.com
+  servername: www.microsoft.com
   client-fingerprint: chrome
   xhttp-opts:
-    path: /G3EEoH63
+    path: /github.com/Alvin9999-newpac/fanqiang
   reality-opts:
-    public-key: bGe_-nAtOq6_w_2mv6pcmD8RzJP65Tti-vyMP2hAwDc
-    short-id: f57d8f26
+    public-key: w8JMWRzOsYUuBeI0i_te745nBRlDocMOTgGMMZLioik
+    short-id: aa45df0f
 - name: vmess-ipv6
   type: vmess
   server: 2a14:7584:d117::a
@@ -24,11 +24,11 @@
   tls: false
   ws-opts:
     path: /github.com/Alvin9999-newpac/fanqiang
-- name: Hysteria2节点
+- name: hysteria2
   type: hysteria2
-  server: 163.172.113.118
-  port: 40022
-  password: dongtaiwang.com
+  server: 83.243.86.103
+  port: 12855
+  password: github.com/Alvin9999-newpac/fanqiang
   skip-cert-verify: true
   sni: www.microsoft.com
   servername: www.microsoft.com
