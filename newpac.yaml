@@ -1,4 +1,4 @@
-- name: ss-VLESS-xhttp-Reality-Vision
+- name: v2ray-VLESS-xhttp-Reality-Vision
   type: vless
   server: 178.18.147.163
   port: 15530
@@ -13,7 +13,7 @@
   reality-opts:
     public-key: w8JMWRzOsYUuBeI0i_te745nBRlDocMOTgGMMZLioik
     short-id: aa45df0f
-- name: ss-vmess-ipv6
+- name: v2ray-vmess-ipv6
   type: vmess
   server: 2a14:7584:d117::a
   port: 27802
@@ -24,7 +24,7 @@
   tls: false
   ws-opts:
     path: /github.com/Alvin9999-newpac/fanqiang
-- name: ss-hysteria2
+- name: v2ray-hysteria2
   type: hysteria2
   server: 83.243.86.103
   port: 12855
@@ -32,13 +32,13 @@
   skip-cert-verify: true
   sni: www.microsoft.com
   servername: www.microsoft.com
-- name: v2ray-SS节点-ipv6
+- name: ss-SS节点-ipv6
   type: ss
   server: 2a14:7584:d118::a
   port: 11111
   password: github.com/Alvin9999-newpac/fanqiang
   cipher: aes-256-gcm
-- name: v2ray-hysteria2
+- name: ss-hysteria2
   type: hysteria2
   server: 178.18.147.66
   port: 29900
@@ -46,7 +46,7 @@
   skip-cert-verify: true
   sni: www.microsoft.com
   servername: www.microsoft.com
-- name: v2ray-newpac-SS-ipv6
+- name: ss-newpac-SS-ipv6
   type: ss
   server: 2a14:7584:d0a1::a
   port: 12345
