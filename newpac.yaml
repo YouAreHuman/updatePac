@@ -38,7 +38,7 @@
   port: 11111
   password: github.com/Alvin9999-newpac/fanqiang
   cipher: aes-256-gcm
-- name: ss-hysteria2
+- name: ss-hysteria2节点
   type: hysteria2
   server: 178.18.147.66
   port: 29900
