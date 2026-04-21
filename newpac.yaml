@@ -1,54 +1,55 @@
-- name: v2ray-VLESS-xhttp-Reality-Vision
-  type: vless
-  server: 178.18.147.163
-  port: 15530
-  uuid: ac121f97-544b-47b3-bf91-eca9c45db548
-  network: xhttp
-  tls: true
-  skip-cert-verify: false
-  servername: www.microsoft.com
-  client-fingerprint: chrome
-  xhttp-opts:
-    path: /github.com/Alvin9999-newpac/fanqiang
-  reality-opts:
-    public-key: w8JMWRzOsYUuBeI0i_te745nBRlDocMOTgGMMZLioik
-    short-id: aa45df0f
-- name: v2ray-vmess-ipv6
-  type: vmess
-  server: 2a14:7584:d117::a
-  port: 27802
-  uuid: b9887ee9-606b-4665-a4ea-7443ca049a68
-  cipher: auto
-  alterId: 0
-  network: ws
-  tls: false
-  ws-opts:
-    path: /github.com/Alvin9999-newpac/fanqiang
-- name: v2ray-hysteria2
-  type: hysteria2
-  server: 83.243.86.103
-  port: 12855
-  password: github.com/Alvin9999-newpac/fanqiang
-  skip-cert-verify: true
-  sni: www.microsoft.com
-  servername: www.microsoft.com
-- name: ss-SS节点-ipv6
-  type: ss
-  server: 2a14:7584:d118::a
-  port: 11111
-  password: github.com/Alvin9999-newpac/fanqiang
-  cipher: aes-256-gcm
-- name: ss-hysteria2节点
-  type: hysteria2
-  server: 178.18.147.66
-  port: 29900
-  password: github.com/Alvin9999-newpac/fanqiang
-  skip-cert-verify: true
-  sni: www.microsoft.com
-  servername: www.microsoft.com
-- name: ss-newpac-SS-ipv6
-  type: ss
-  server: 2a14:7584:d0a1::a
-  port: 12345
-  password: fan3.380227.xyz
-  cipher: aes-256-gcm
+proxies:
+  - name: v2ray-VLESS-xhttp-Reality-Vision
+    type: vless
+    server: 178.18.147.163
+    port: 15530
+    uuid: ac121f97-544b-47b3-bf91-eca9c45db548
+    network: xhttp
+    tls: true
+    skip-cert-verify: false
+    servername: www.microsoft.com
+    client-fingerprint: chrome
+    xhttp-opts:
+      path: /github.com/Alvin9999-newpac/fanqiang
+    reality-opts:
+      public-key: w8JMWRzOsYUuBeI0i_te745nBRlDocMOTgGMMZLioik
+      short-id: aa45df0f
+  - name: v2ray-vmess-ipv6
+    type: vmess
+    server: 2a14:7584:d117::a
+    port: 27802
+    uuid: b9887ee9-606b-4665-a4ea-7443ca049a68
+    cipher: auto
+    alterId: 0
+    network: ws
+    tls: false
+    ws-opts:
+      path: /github.com/Alvin9999-newpac/fanqiang
+  - name: v2ray-hysteria2
+    type: hysteria2
+    server: 83.243.86.103
+    port: 12855
+    password: github.com/Alvin9999-newpac/fanqiang
+    skip-cert-verify: true
+    sni: www.microsoft.com
+    servername: www.microsoft.com
+  - name: ss-SS节点-ipv6
+    type: ss
+    server: 2a14:7584:d118::a
+    port: 11111
+    password: github.com/Alvin9999-newpac/fanqiang
+    cipher: aes-256-gcm
+  - name: ss-hysteria2节点
+    type: hysteria2
+    server: 178.18.147.66
+    port: 29900
+    password: github.com/Alvin9999-newpac/fanqiang
+    skip-cert-verify: true
+    sni: www.microsoft.com
+    servername: www.microsoft.com
+  - name: ss-newpac-SS-ipv6
+    type: ss
+    server: 2a14:7584:d0a1::a
+    port: 12345
+    password: fan3.380227.xyz
+    cipher: aes-256-gcm
