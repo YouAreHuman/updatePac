@@ -25,10 +25,10 @@ proxies:
     tls: false
     ws-opts:
       path: /github.com/Alvin9999-newpac/fanqiang
-  - name: v2ray-hysteria2
+  - name: v2ray-hysteria2-warp
     type: hysteria2
     server: 83.243.86.103
-    port: 12855
+    port: 38563
     password: github.com/Alvin9999-newpac/fanqiang
     skip-cert-verify: true
     sni: www.microsoft.com
