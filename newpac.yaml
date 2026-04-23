@@ -14,11 +14,11 @@ proxies:
     reality-opts:
       public-key: w8JMWRzOsYUuBeI0i_te745nBRlDocMOTgGMMZLioik
       short-id: aa45df0f
-  - name: v2ray-vmess-ws-ipv6
+  - name: v2ray-vmess-ipv6
     type: vmess
-    server: 2a14:7584:d118::a
-    port: 10736
-    uuid: 2b8e0bfe-0fb2-475b-91db-824b2f4e9a1b
+    server: 2a14:7584:d117::14
+    port: 27802
+    uuid: b9887ee9-606b-4665-a4ea-7443ca049a68
     cipher: auto
     alterId: 0
     network: ws
@@ -41,7 +41,7 @@ proxies:
     cipher: aes-256-gcm
   - name: ss-SS节点-ipv6
     type: ss
-    server: 2a14:7584:d118::a
+    server: 2a14:7584:d118::d
     port: 11111
     password: github.com/Alvin9999-newpac/fanqiang
     cipher: aes-256-gcm
