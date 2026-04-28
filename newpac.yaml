@@ -33,6 +33,12 @@ proxies:
     skip-cert-verify: true
     sni: www.microsoft.com
     servername: www.microsoft.com
+  - name: v2ray-newpac-SS-ipv6
+    type: ss
+    server: 2a14:7584:d0a1::a
+    port: 12345
+    password: fan3.380227.xyz
+    cipher: aes-256-gcm
   - name: ss-SS节点-ipv6
     type: ss
     server: 2a14:7584:d118::d
@@ -47,9 +53,3 @@ proxies:
     skip-cert-verify: true
     sni: www.microsoft.com
     servername: www.microsoft.com
-  - name: ss-newpac-SS-ipv6
-    type: ss
-    server: 2a14:7584:d0a1::a
-    port: 12345
-    password: fan3.380227.xyz
-    cipher: aes-256-gcm
