@@ -132,36 +132,6 @@ proxy-providers:
       proxy-name:
         - pattern: 机场推荐[：:]
           target: ''
-  ssrsub-vless:
-    <<: *PF
-    type: file
-    path: proxy_providers/ssrsub-vless.txt
-    override:
-      upd: true
-      additional-prefix: ssrsub-vless|
-      proxy-name:
-        - pattern: 机场推荐[：:]
-          target: ''
-  ssrsub-hysteria2:
-    <<: *PF
-    type: file
-    path: proxy_providers/ssrsub-hysteria2.txt
-    override:
-      upd: true
-      additional-prefix: ssrsub-hysteria2|
-      proxy-name:
-        - pattern: 机场推荐[：:]
-          target: ''
-  back:
-    <<: *PF
-    type: file
-    path: proxy_providers/default.yaml
-    override:
-      upd: true
-      additional-prefix: back|
-      proxy-name:
-        - pattern: 机场推荐[：:]
-          target: ''
 
 # 通用配置
 mode: rule
