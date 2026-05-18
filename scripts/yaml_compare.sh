@@ -102,7 +102,7 @@ else
     if [[ "$MAJOR_VER" -lt 4 ]]; then
         # echo "错误: 需要 yq v4 或更高版本，当前版本: $YQ_VERSION" >&2
         echo "错误: 需要 yq v4 或更高版本，当前版本: $(yq --version)" >&2
-        # exit 1
+        exit 1
     fi
 fi
 

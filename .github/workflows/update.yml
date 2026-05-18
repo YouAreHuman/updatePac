@@ -65,7 +65,8 @@ jobs:
         run: |
           cd cfw
           pnpm install --frozen-lockfile || pnpm install
-          sudo apt-get install yq
+          # sudo apt-get install yq
+          sudo wget https://github.com/mikefarah/yq/releases/latest/download/yq_linux_amd64 -O /usr/bin/yq && sudo chmod +x /usr/bin/yq
 
       # 7. 执行上面写好的代码
       # 假设你的入口脚本在 cfw 的根目录，或者你需要指定路径
