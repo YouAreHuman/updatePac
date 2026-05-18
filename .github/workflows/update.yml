@@ -117,8 +117,9 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           
-          ./scripts/gitcheck.sh newpac
-          ./scripts/gitcheck.sh ssrhub
+          ./scripts/gitcheck.sh newpac.yaml
+          ./scripts/gitcheck.sh newpac.json
+          ./scripts/gitcheck.sh ssrhub.yaml
           [ -f ready.txt ] && git push origin HEAD:master && echo "✅ 推送成功！"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
