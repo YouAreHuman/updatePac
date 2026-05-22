@@ -121,6 +121,6 @@ jobs:
           ./scripts/gitcheck.sh newpac.yaml
           ./scripts/gitcheck.sh newpac.json
           ./scripts/gitcheck.sh ssrhub.yaml
-          [ -f ready.txt ] && git push origin HEAD:master && echo "✅ 推送成功！"
+          [ -e ready.txt ] && git push origin HEAD:master && echo "✅ 推送成功！"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
