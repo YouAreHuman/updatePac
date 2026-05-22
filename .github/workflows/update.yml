@@ -101,7 +101,7 @@ jobs:
             echo "needCommit=1" >> $GITHUB_OUTPUT
           else
             if ../scripts/yaml_compare.sh ssrhub.yaml ../ssrhub.yaml; then
-              echo "比对完成，文件内容相同..."
+              echo "比对完成，ssrhub.yaml文件内容相同..."
             else
               echo "needCommit=1" >> $GITHUB_OUTPUT
             fi
@@ -121,6 +121,10 @@ jobs:
           ./scripts/gitcheck.sh newpac.yaml
           ./scripts/gitcheck.sh newpac.json
           ./scripts/gitcheck.sh ssrhub.yaml
-          [ -e ready.txt ] && git push origin HEAD:master && echo "✅ 推送成功！"
+          if [ -e ready.txt ];then
+            git push origin HEAD:master && echo "✅ 推送成功！"
+          else
+            echo "⏭️ 无更新，无需推送。"
+          fi
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
