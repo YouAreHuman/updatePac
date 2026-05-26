@@ -1,7 +1,7 @@
 proxies:
-  - name: v2ray-VLESS-xhttp-Reality-Vision
+  - name: v2ray-VLESS-xhttp-Reality-ipv6
     type: vless
-    server: 178.18.147.163
+    server: 2a13:adc0::5054:ff:fe28:c5d8
     port: 15530
     uuid: ac121f97-544b-47b3-bf91-eca9c45db548
     network: xhttp
