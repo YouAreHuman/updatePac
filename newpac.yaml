@@ -25,14 +25,6 @@ proxies:
     tls: false
     ws-opts:
       path: /github.com/Alvin9999-newpac/fanqiang
-  - name: v2ray-hysteria2节点
-    type: hysteria2
-    server: 178.18.147.66
-    port: 29900
-    password: github.com/Alvin9999-newpac/fanqiang
-    skip-cert-verify: true
-    sni: www.microsoft.com
-    servername: www.microsoft.com
   - name: ss-SS节点-ipv6
     type: ss
     server: 2a02:6ea0:d32f::f8fe:349b
@@ -41,8 +33,8 @@ proxies:
     cipher: aes-256-gcm
   - name: ss-hysteria2节点
     type: hysteria2
-    server: 178.18.147.66
-    port: 29900
+    server: 163.172.126.108
+    port: 41227
     password: github.com/Alvin9999-newpac/fanqiang
     skip-cert-verify: true
     sni: www.microsoft.com
