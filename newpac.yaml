@@ -1,19 +1,19 @@
 proxies:
-  - name: v2ray-VLESS-xhttp-Reality-ipv6
+  - name: v2ray-VLESS-xhttp-Reality-Vision
     type: vless
-    server: 2a13:adc0::5054:ff:fe28:c5d8
-    port: 15530
-    uuid: ac121f97-544b-47b3-bf91-eca9c45db548
+    server: 163.172.227.62
+    port: 60277
+    uuid: 4e9a2de3-4193-49a9-b7fb-b5fff8479904
     network: xhttp
     tls: true
     skip-cert-verify: false
-    servername: www.microsoft.com
+    servername: www.lovelive-anime.jp
     client-fingerprint: chrome
     xhttp-opts:
-      path: /github.com/Alvin9999-newpac/fanqiang
+      path: /YplI82oo
     reality-opts:
-      public-key: w8JMWRzOsYUuBeI0i_te745nBRlDocMOTgGMMZLioik
-      short-id: aa45df0f
+      public-key: o2mKhGNfc7h3XaxZgmmAWHnWs5FdwciNPoSFMOh2wng
+      short-id: cd0bbb9f
   - name: v2ray-vmess-ws-ipv6
     type: vmess
     server: 2a02:6ea0:d32f::f8fe:349b
