@@ -1,7 +1,7 @@
 proxies:
   - name: v2ray-VLESS-xhttp-Reality-Vision
     type: vless
-    server: 163.172.227.62
+    server: vless.453074.xyz
     port: 60277
     uuid: 4e9a2de3-4193-49a9-b7fb-b5fff8479904
     network: xhttp
@@ -25,6 +25,14 @@ proxies:
     tls: false
     ws-opts:
       path: /github.com/Alvin9999-newpac/fanqiang
+  - name: v2ray-hysteria2节点
+    type: hysteria2
+    server: hy2.453074.xyz
+    port: 43115
+    password: github.com/Alvin9999-newpac/fanqiang
+    skip-cert-verify: true
+    sni: www.microsoft.com
+    servername: www.microsoft.com
   - name: ss-SS节点-ipv6
     type: ss
     server: 2a02:6ea0:d32f::f8fe:349b
@@ -33,8 +41,8 @@ proxies:
     cipher: aes-256-gcm
   - name: ss-hysteria2节点
     type: hysteria2
-    server: 163.172.126.108
-    port: 41227
+    server: hy2.453074.xyz
+    port: 43115
     password: github.com/Alvin9999-newpac/fanqiang
     skip-cert-verify: true
     sni: www.microsoft.com
