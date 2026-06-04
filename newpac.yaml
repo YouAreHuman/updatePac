@@ -27,7 +27,7 @@ proxies:
       path: /github.com/Alvin9999-newpac/fanqiang
   - name: v2ray-hysteria2-ipv4
     type: hysteria2
-    server: 62.210.10.107
+    server: 62.210.29.98
     port: 64772
     password: github.com/Alvin9999-newpac/fanqiang
     skip-cert-verify: true
