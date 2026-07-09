@@ -1,19 +1,19 @@
 proxies:
-  - name: v2ray-VLESS-xhttp-Reality-Vision
+  - name: v2ray-VLESS-xhttp-ipv6
     type: vless
     server: 2001:bc8:32d7:302::10
-    port: 60277
-    uuid: 4e9a2de3-4193-49a9-b7fb-b5fff8479904
+    port: 65513
+    uuid: 2567e2e0-8d4c-4c51-aee9-5d1f36024472
     network: xhttp
     tls: true
     skip-cert-verify: false
-    servername: www.lovelive-anime.jp
+    servername: www.yahoo.com
     client-fingerprint: chrome
     xhttp-opts:
-      path: /YplI82oo
+      path: /6eg3r4an
     reality-opts:
-      public-key: o2mKhGNfc7h3XaxZgmmAWHnWs5FdwciNPoSFMOh2wng
-      short-id: cd0bbb9f
+      public-key: tQeEamJmYVUUfjRLX7ETvMnPj4DrHzRhR5TI684oYgg
+      short-id: 21569dd6
   - name: v2ray-vmess-ws-ipv6
     type: vmess
     server: 2001:bc8:32d7:225::3
