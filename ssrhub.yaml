@@ -24,7 +24,7 @@ PF: &PF { exclude-filter: *FilterPP, type: file, proxy: DIRECT, interval: 600, h
 proxy-providers:
   vvTec:
     <<: *PU
-    type: http
+    interval: 3600
     url: https://gh-proxy.com/raw.githubusercontent.com/free18/v2ray/main/c.yaml
     path: proxy_providers/vvTec_c.yaml
     override:
@@ -35,7 +35,7 @@ proxy-providers:
           target: ''
   newpac:
     <<: *PU
-    type: http
+    interval: 3600
     url: https://gh-proxy.com/raw.githubusercontent.com/YouAreHuman/updatePac/master/newpac.yaml
     path: proxy_providers/newpac_newpac.yaml
     override:
@@ -46,7 +46,7 @@ proxy-providers:
           target: ''
   xrayvip:
     <<: *PU
-    type: http
+    interval: 3600
     url: https://www.xrayvip.com/free.txt
     path: proxy_providers/xrayvip_free.txt
     override:
@@ -57,7 +57,7 @@ proxy-providers:
           target: ''
   freeV2net:
     <<: *PU
-    type: http
+    interval: 3600
     url: https://xmxosfepggzm.503403.xyz
     path: proxy_providers/freeV2net_xmxosfepggzm.503403.xyz
     override:
@@ -68,7 +68,7 @@ proxy-providers:
           target: ''
   ssrsub:
     <<: *PU
-    type: http
+    interval: 3600
     url: https://gh-proxy.com/raw.githubusercontent.com/ssrsub/ssr/master/clash.yaml
     path: proxy_providers/ssrsub_clash.yaml
     override:
@@ -79,7 +79,7 @@ proxy-providers:
           target: ''
   ermao:
     <<: *PU
-    type: http
+    interval: 3600
     url: https://gh-proxy.com/raw.githubusercontent.com/ermaozi/get_subscribe/main/subscribe/clash.yml
     path: proxy_providers/ermao_clash.yml
     override:
@@ -90,7 +90,7 @@ proxy-providers:
           target: ''
   fanpx:
     <<: *PU
-    type: http
+    interval: 3600
     url: https://gh-proxy.com/raw.githubusercontent.com/snakem982/proxypool/main/source/clash-meta.yaml
     path: proxy_providers/fanpx_clash-meta.yaml
     override:
@@ -101,7 +101,7 @@ proxy-providers:
           target: ''
   fanpx1:
     <<: *PU
-    type: http
+    interval: 3600
     url: https://gh-proxy.com/raw.githubusercontent.com/snakem982/proxypool/main/source/clash-meta-2.yaml
     path: proxy_providers/fanpx_clash-meta-2.yaml
     override:
@@ -112,7 +112,7 @@ proxy-providers:
           target: ''
   anaer:
     <<: *PU
-    type: http
+    interval: 3600
     url: https://gh-proxy.com/raw.githubusercontent.com/anaer/Sub/main/proxies.yaml
     path: proxy_providers/anaer_proxies.yaml
     override:
@@ -123,7 +123,7 @@ proxy-providers:
           target: ''
   peasoft:
     <<: *PU
-    type: http
+    interval: 3600
     url: https://gh-proxy.com/raw.githubusercontent.com/chengaopan/AutoMergePublicNodes/master/list.meta.yml
     path: proxy_providers/peasoft_list.meta.yml
     override:
