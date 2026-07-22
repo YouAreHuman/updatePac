@@ -172,29 +172,32 @@ dns:
     - https://dns.adguard-dns.com/dns-query#ecs=1.1.1.1/24&ecs-override=true
     - https://dns.cloudflare.com/dns-query#ecs=1.1.1.1/24&ecs-override=true
     - https://dns.google/dns-query#ecs=1.1.1.1/24&ecs-override=true
-  direct-nameserver-follow-policy: true # 用于 direct 出口域名解析的 DNS 服务器，如果不填则遵循 nameserver-policy、nameserver 和 fallback 的配置
-  default-nameserver: # 默认 DNS, 用于解析 DNS 服务器 的域名，必须为 IP, 可为加密 DNS
+  direct-nameserver-follow-policy: true
+  default-nameserver:
     - tls://223.5.5.5
     - tls://119.29.29.29
-  nameserver: # 默认的域名解析服务器，如不配置 fallback/proxy-server-nameserver , 则所有域名都由 nameserver 解析
+  nameserver:
     - https://dns.adguard-dns.com/dns-query#ecs=1.1.1.1/24&ecs-override=true
     - https://dns.cloudflare.com/dns-query#ecs=1.1.1.1/24&ecs-override=true
     - https://dns.google/dns-query#ecs=1.1.1.1/24&ecs-override=true
-  nameserver-policy: # 指定域名查询的解析服务器，优先于 nameserver/fallback 查询
-    "RULE-SET:China,Lan": 
+  nameserver-policy:
+    RULE-SET:China,Lan:
       - https://dns.alidns.com/dns-query#ecs=223.5.5.5/24&ecs-override=true
       - https://doh.pub/dns-query#ecs=223.5.5.5/24&ecs-override=true
-  proxy-server-nameserver:  # 代理节点域名解析服务器，仅用于解析代理节点的域名，如果不填则遵循 nameserver-policy、nameserver 和 fallback 的配置
+    +.fastgit.cc:
+      - https://dns.alidns.com/dns-query#ecs=223.5.5.5/24&ecs-override=true
+      - https://doh.pub/dns-query#ecs=223.5.5.5/24&ecs-override=true
+    +.gh-proxy.com:
+      - https://dns.alidns.com/dns-query#ecs=223.5.5.5/24&ecs-override=true
+      - https://doh.pub/dns-query#ecs=223.5.5.5/24&ecs-override=true
+  proxy-server-nameserver:
     - https://dns.alidns.com/dns-query#ecs=223.5.5.5/24&ecs-override=true
     - https://doh.pub/dns-query#ecs=223.5.5.5/24&ecs-override=true
-  proxy-server-nameserver-policy: # 格式同nameserver-policy，仅用于节点域名解析，优先于proxy-server-nameserver查询，自定义机场在此添加DNS
-    '*.digital-nvme.com': 
+  proxy-server-nameserver-policy:
+    '*.digital-nvme.com':
       - 8.138.94.132:8053
-    '*.yunsmartdns.com': 
+    '*.yunsmartdns.com':
       - 8.138.94.132:8053
-
-
-# GEO配置
 geodata-mode: false
 geo-auto-update: true
 geo-update-interval: 24
