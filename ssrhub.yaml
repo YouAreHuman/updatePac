@@ -32,7 +32,7 @@ proxy-providers:
       additional-prefix: vvTec|
       proxy-name:
         - pattern: 机场推荐[：:]
-          target: ''
+          target: ""
   newpac:
     <<: *PU
     interval: 3600
@@ -43,7 +43,7 @@ proxy-providers:
       additional-prefix: newpac|
       proxy-name:
         - pattern: 机场推荐[：:]
-          target: ''
+          target: ""
   xrayvip:
     <<: *PU
     interval: 3600
@@ -54,7 +54,7 @@ proxy-providers:
       additional-prefix: xrayvip|
       proxy-name:
         - pattern: 机场推荐[：:]
-          target: ''
+          target: ""
   freeV2net:
     <<: *PU
     interval: 3600
@@ -65,7 +65,7 @@ proxy-providers:
       additional-prefix: freeV2net|
       proxy-name:
         - pattern: 机场推荐[：:]
-          target: ''
+          target: ""
   ssrsub:
     <<: *PU
     interval: 3600
@@ -76,7 +76,7 @@ proxy-providers:
       additional-prefix: ssrsub|
       proxy-name:
         - pattern: 机场推荐[：:]
-          target: ''
+          target: ""
   ermao:
     <<: *PU
     interval: 3600
@@ -87,7 +87,7 @@ proxy-providers:
       additional-prefix: ermao|
       proxy-name:
         - pattern: 机场推荐[：:]
-          target: ''
+          target: ""
   fanpx:
     <<: *PU
     interval: 3600
@@ -98,7 +98,7 @@ proxy-providers:
       additional-prefix: fanpx|
       proxy-name:
         - pattern: 机场推荐[：:]
-          target: ''
+          target: ""
   fanpx1:
     <<: *PU
     interval: 3600
@@ -109,7 +109,7 @@ proxy-providers:
       additional-prefix: fanpx1|
       proxy-name:
         - pattern: 机场推荐[：:]
-          target: ''
+          target: ""
   anaer:
     <<: *PU
     interval: 3600
@@ -120,7 +120,7 @@ proxy-providers:
       additional-prefix: anaer|
       proxy-name:
         - pattern: 机场推荐[：:]
-          target: ''
+          target: ""
   peasoft:
     <<: *PU
     interval: 3600
@@ -131,7 +131,7 @@ proxy-providers:
       additional-prefix: peasoft|
       proxy-name:
         - pattern: 机场推荐[：:]
-          target: ''
+          target: ""
 
 # 通用配置
 mode: rule
@@ -181,22 +181,22 @@ dns:
     - https://dns.cloudflare.com/dns-query#ecs=1.1.1.1/24&ecs-override=true
     - https://dns.google/dns-query#ecs=1.1.1.1/24&ecs-override=true
   nameserver-policy:
-    RULE-SET:China,Lan:
+    "RULE-SET:China,Lan":
       - https://dns.alidns.com/dns-query#ecs=223.5.5.5/24&ecs-override=true
       - https://doh.pub/dns-query#ecs=223.5.5.5/24&ecs-override=true
-    +.fastgit.cc:
+    "+.fastgit.cc":
       - https://dns.alidns.com/dns-query#ecs=223.5.5.5/24&ecs-override=true
       - https://doh.pub/dns-query#ecs=223.5.5.5/24&ecs-override=true
-    +.gh-proxy.com:
+    "+.gh-proxy.com":
       - https://dns.alidns.com/dns-query#ecs=223.5.5.5/24&ecs-override=true
       - https://doh.pub/dns-query#ecs=223.5.5.5/24&ecs-override=true
   proxy-server-nameserver:
     - https://dns.alidns.com/dns-query#ecs=223.5.5.5/24&ecs-override=true
     - https://doh.pub/dns-query#ecs=223.5.5.5/24&ecs-override=true
   proxy-server-nameserver-policy:
-    '*.digital-nvme.com':
+    "*.digital-nvme.com":
       - 8.138.94.132:8053
-    '*.yunsmartdns.com':
+    "*.yunsmartdns.com":
       - 8.138.94.132:8053
 geodata-mode: false
 geo-auto-update: true
