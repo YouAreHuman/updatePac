@@ -25,7 +25,7 @@ proxy-providers:
   vvTec:
     <<: *PU
     interval: 3600
-    url: https://gh-proxy.com/raw.githubusercontent.com/free18/v2ray/main/c.yaml
+    url: https://fastgit.cc/raw.githubusercontent.com/free18/v2ray/main/c.yaml
     path: proxy_providers/vvTec_c.yaml
     override:
       upd: true
@@ -36,7 +36,7 @@ proxy-providers:
   newpac:
     <<: *PU
     interval: 3600
-    url: https://gh-proxy.com/raw.githubusercontent.com/YouAreHuman/updatePac/master/newpac.yaml
+    url: https://fastgit.cc/raw.githubusercontent.com/YouAreHuman/updatePac/master/newpac.yaml
     path: proxy_providers/newpac_newpac.yaml
     override:
       upd: true
@@ -69,7 +69,7 @@ proxy-providers:
   ssrsub:
     <<: *PU
     interval: 3600
-    url: https://gh-proxy.com/raw.githubusercontent.com/ssrsub/ssr/master/clash.yaml
+    url: https://fastgit.cc/raw.githubusercontent.com/ssrsub/ssr/master/clash.yaml
     path: proxy_providers/ssrsub_clash.yaml
     override:
       upd: true
@@ -80,7 +80,7 @@ proxy-providers:
   ermao:
     <<: *PU
     interval: 3600
-    url: https://gh-proxy.com/raw.githubusercontent.com/ermaozi/get_subscribe/main/subscribe/clash.yml
+    url: https://fastgit.cc/raw.githubusercontent.com/ermaozi/get_subscribe/main/subscribe/clash.yml
     path: proxy_providers/ermao_clash.yml
     override:
       upd: true
@@ -91,7 +91,7 @@ proxy-providers:
   fanpx:
     <<: *PU
     interval: 3600
-    url: https://gh-proxy.com/raw.githubusercontent.com/snakem982/proxypool/main/source/clash-meta.yaml
+    url: https://fastgit.cc/raw.githubusercontent.com/snakem982/proxypool/main/source/clash-meta.yaml
     path: proxy_providers/fanpx_clash-meta.yaml
     override:
       upd: true
@@ -102,7 +102,7 @@ proxy-providers:
   fanpx1:
     <<: *PU
     interval: 3600
-    url: https://gh-proxy.com/raw.githubusercontent.com/snakem982/proxypool/main/source/clash-meta-2.yaml
+    url: https://fastgit.cc/raw.githubusercontent.com/snakem982/proxypool/main/source/clash-meta-2.yaml
     path: proxy_providers/fanpx_clash-meta-2.yaml
     override:
       upd: true
@@ -113,7 +113,7 @@ proxy-providers:
   anaer:
     <<: *PU
     interval: 3600
-    url: https://gh-proxy.com/raw.githubusercontent.com/anaer/Sub/main/proxies.yaml
+    url: https://fastgit.cc/raw.githubusercontent.com/anaer/Sub/main/proxies.yaml
     path: proxy_providers/anaer_proxies.yaml
     override:
       upd: true
@@ -124,7 +124,7 @@ proxy-providers:
   peasoft:
     <<: *PU
     interval: 3600
-    url: https://gh-proxy.com/raw.githubusercontent.com/chengaopan/AutoMergePublicNodes/master/list.meta.yml
+    url: https://fastgit.cc/raw.githubusercontent.com/chengaopan/AutoMergePublicNodes/master/list.meta.yml
     path: proxy_providers/peasoft_list.meta.yml
     override:
       upd: true
@@ -185,9 +185,6 @@ dns:
       - https://dns.alidns.com/dns-query#ecs=223.5.5.5/24&ecs-override=true
       - https://doh.pub/dns-query#ecs=223.5.5.5/24&ecs-override=true
     "+.fastgit.cc":
-      - https://dns.alidns.com/dns-query#ecs=223.5.5.5/24&ecs-override=true
-      - https://doh.pub/dns-query#ecs=223.5.5.5/24&ecs-override=true
-    "+.gh-proxy.com":
       - https://dns.alidns.com/dns-query#ecs=223.5.5.5/24&ecs-override=true
       - https://doh.pub/dns-query#ecs=223.5.5.5/24&ecs-override=true
   proxy-server-nameserver:
