@@ -18,8 +18,8 @@ FilterPP: &FilterPP "Expire|到期|剩余|Traffic|网址|官网|过期|地址"
 # https://www.qualcomm.cn/generate_204
 UrlTest:  &UrlTest 'https://www.gstatic.com/generate_204'
 
-PU: &PU { exclude-filter: *FilterPP, type: http, proxy: DIRECT, interval: 600, health-check: { enable: true, url: *UrlTest, interval: 300 } }
-PF: &PF { exclude-filter: *FilterPP, type: file, proxy: DIRECT, interval: 600, health-check: { enable: true, url: *UrlTest, interval: 300 } }
+PU: &PU { exclude-filter: *FilterPP, type: http, interval: 600, health-check: { enable: true, url: *UrlTest, interval: 300 } }
+PF: &PF { exclude-filter: *FilterPP, type: file, interval: 600, health-check: { enable: true, url: *UrlTest, interval: 300 } }
 # 官方配置文档: https://wiki.metacubex.one/config/proxy-providers/
 proxy-providers:
   vvTec:
