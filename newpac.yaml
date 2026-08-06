@@ -27,12 +27,12 @@ proxies:
       path: /github.com/Alvin9999-newpac/fanqiang
   - name: v2ray-github-anytls-1
     type: anytls
-    server: ip3.934618.xyz
-    port: 17700
+    server: ip4.934618.xyz
+    port: 51133
     password: github.com/Alvin9999-newpac/fanqiang
-    sni: ip3.934618.xyz
+    sni: ip4.934618.xyz
     skip-cert-verify: false
-    servername: ip3.934618.xyz
+    servername: ip4.934618.xyz
   - name: ss-SS-IPv6
     type: ss
     server: 2001:bc8:32d7:17b::100
@@ -41,9 +41,9 @@ proxies:
     password: github.com/Alvin9999-newpac/fanqiang
   - name: ss-github-anytls-1
     type: anytls
-    server: ip3.934618.xyz
-    port: 17700
+    server: ip4.934618.xyz
+    port: 51133
     password: github.com/Alvin9999-newpac/fanqiang
-    sni: ip3.934618.xyz
+    sni: ip4.934618.xyz
     skip-cert-verify: false
-    servername: ip3.934618.xyz
+    servername: ip4.934618.xyz
