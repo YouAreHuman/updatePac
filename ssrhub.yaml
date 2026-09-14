@@ -25,7 +25,7 @@ proxy-providers:
   newpac:
     <<: *PU
     interval: 3600
-    url: https://gh-proxy.com/raw.githubusercontent.com/YouAreHuman/updatePac/master/newpac.yaml
+    url: https://github.ednovas.xyz/raw.githubusercontent.com/YouAreHuman/updatePac/master/newpac.yaml
     path: proxy_providers/newpac_newpac.yaml
     override:
       upd: true
@@ -58,7 +58,7 @@ proxy-providers:
   ssrsub:
     <<: *PU
     interval: 3600
-    url: https://gh-proxy.com/raw.githubusercontent.com/ssrsub/ssr/master/clash.yaml
+    url: https://github.ednovas.xyz/raw.githubusercontent.com/ssrsub/ssr/master/clash.yaml
     path: proxy_providers/ssrsub_clash.yaml
     override:
       upd: true
@@ -69,7 +69,7 @@ proxy-providers:
   fanpx:
     <<: *PU
     interval: 3600
-    url: https://gh-proxy.com/raw.githubusercontent.com/snakem982/proxypool/main/source/clash-meta.yaml
+    url: https://github.ednovas.xyz/raw.githubusercontent.com/snakem982/proxypool/main/source/clash-meta.yaml
     path: proxy_providers/fanpx_clash-meta.yaml
     override:
       upd: true
@@ -80,7 +80,7 @@ proxy-providers:
   fanpx1:
     <<: *PU
     interval: 3600
-    url: https://gh-proxy.com/raw.githubusercontent.com/snakem982/proxypool/main/source/clash-meta-2.yaml
+    url: https://github.ednovas.xyz/raw.githubusercontent.com/snakem982/proxypool/main/source/clash-meta-2.yaml
     path: proxy_providers/fanpx_clash-meta-2.yaml
     override:
       upd: true
@@ -91,7 +91,7 @@ proxy-providers:
   anaer:
     <<: *PU
     interval: 3600
-    url: https://gh-proxy.com/raw.githubusercontent.com/anaer/Sub/main/proxies.yaml
+    url: https://github.ednovas.xyz/raw.githubusercontent.com/anaer/Sub/main/proxies.yaml
     path: proxy_providers/anaer_proxies.yaml
     override:
       upd: true
@@ -154,7 +154,7 @@ dns:
     "+.fastgit.cc":
       - https://dns.alidns.com/dns-query#ecs=223.5.5.5/24&ecs-override=true
       - https://doh.pub/dns-query#ecs=223.5.5.5/24&ecs-override=true
-    "+.gh-proxy.com":
+    "+.github.ednovas.xyz":
       - https://dns.alidns.com/dns-query#ecs=223.5.5.5/24&ecs-override=true
       - https://doh.pub/dns-query#ecs=223.5.5.5/24&ecs-override=true
   proxy-server-nameserver:
@@ -369,6 +369,7 @@ rules:
   - DOMAIN-SUFFIX,gh-proxy.com,DIRECT
   - DOMAIN-SUFFIX,gh-proxy.org,DIRECT
   - DOMAIN-SUFFIX,fastgit.cc,DIRECT
+  - DOMAIN-SUFFIX,github.ednovas.xyz,DIRECT
   - RULE-SET,Direct,DIRECT
   - >-
     AND,((DST-PORT,443),(NETWORK,UDP),(NOT,((RULE-SET,ChinaIP))),(NOT,((RULE-SET,China)))),REJECT
