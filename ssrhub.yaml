@@ -22,17 +22,6 @@ PU: &PU { exclude-filter: *FilterPP, type: http, interval: 600, health-check: { 
 PF: &PF { exclude-filter: *FilterPP, type: file, interval: 600, health-check: { enable: true, url: *UrlTest, interval: 300 } }
 # 官方配置文档: https://wiki.metacubex.one/config/proxy-providers/
 proxy-providers:
-  vvTec:
-    <<: *PU
-    interval: 3600
-    url: https://gh-proxy.com/raw.githubusercontent.com/free18/v2ray/main/c.yaml
-    path: proxy_providers/vvTec_c.yaml
-    override:
-      upd: true
-      additional-prefix: vvTec|
-      proxy-name:
-        - pattern: 机场推荐[：:]
-          target: ""
   newpac:
     <<: *PU
     interval: 3600
@@ -77,17 +66,6 @@ proxy-providers:
       proxy-name:
         - pattern: 机场推荐[：:]
           target: ""
-  ermao:
-    <<: *PU
-    interval: 3600
-    url: https://gh-proxy.com/raw.githubusercontent.com/ermaozi/get_subscribe/main/subscribe/clash.yml
-    path: proxy_providers/ermao_clash.yml
-    override:
-      upd: true
-      additional-prefix: ermao|
-      proxy-name:
-        - pattern: 机场推荐[：:]
-          target: ""
   fanpx:
     <<: *PU
     interval: 3600
@@ -118,17 +96,6 @@ proxy-providers:
     override:
       upd: true
       additional-prefix: anaer|
-      proxy-name:
-        - pattern: 机场推荐[：:]
-          target: ""
-  peasoft:
-    <<: *PU
-    interval: 3600
-    url: https://gh-proxy.com/raw.githubusercontent.com/chengaopan/AutoMergePublicNodes/master/list.meta.yml
-    path: proxy_providers/peasoft_list.meta.yml
-    override:
-      upd: true
-      additional-prefix: peasoft|
       proxy-name:
         - pattern: 机场推荐[：:]
           target: ""
@@ -399,14 +366,13 @@ rule-providers:
 
 # 官方配置文档: https://wiki.metacubex.one/config/rules/
 rules:
-  # 自定义规则集
+  - DOMAIN-SUFFIX,gh-proxy.com,DIRECT
+  - DOMAIN-SUFFIX,gh-proxy.org,DIRECT
+  - DOMAIN-SUFFIX,fastgit.cc,DIRECT
   - RULE-SET,Direct,DIRECT
-  - AND,((DST-PORT,443),(NETWORK,UDP),(NOT,((RULE-SET,ChinaIP))),(NOT,((RULE-SET,China)))),REJECT  # 阻止海外 QUIC 流量泄漏
-  
-  # 应用规则集
-  - RULE-SET,ChinaAPP,DIRECT  
-
-  # 域名规则集-按照优先级顺序排列
+  - >-
+    AND,((DST-PORT,443),(NETWORK,UDP),(NOT,((RULE-SET,ChinaIP))),(NOT,((RULE-SET,China)))),REJECT
+  - RULE-SET,ChinaAPP,DIRECT
   - RULE-SET,category-ads-all,REJECT
   - RULE-SET,YouTube,YouTube
   - RULE-SET,Github,Github
@@ -428,13 +394,9 @@ rules:
   - RULE-SET,Emby,Emby
   - RULE-SET,Lan,DIRECT
   - RULE-SET,China,DIRECT
-
-  # IP规则集-按照优先级顺序排列
   - RULE-SET,LanIP,DIRECT,no-resolve
   - RULE-SET,ChinaIP,DIRECT,no-resolve
   - RULE-SET,GoogleIP,Google,no-resolve
   - RULE-SET,TelegramIP,Telegram,no-resolve
   - RULE-SET,TwitterIP,Twitter(X),no-resolve
-
-  # 默认规则集
   - MATCH,手动选择
