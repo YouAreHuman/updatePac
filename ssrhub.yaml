@@ -31,7 +31,7 @@ proxy-providers:
       upd: true
       additional-prefix: newpac|
       proxy-name:
-        - pattern: 机场推荐[：:]
+        - pattern: 【(.*?)】|机场推荐[：:]
           target: ""
   xrayvip:
     <<: *PU
@@ -42,7 +42,7 @@ proxy-providers:
       upd: true
       additional-prefix: xrayvip|
       proxy-name:
-        - pattern: 机场推荐[：:]
+        - pattern: 【(.*?)】|机场推荐[：:]
           target: ""
   freeV2net:
     <<: *PU
@@ -53,7 +53,7 @@ proxy-providers:
       upd: true
       additional-prefix: freeV2net|
       proxy-name:
-        - pattern: 机场推荐[：:]
+        - pattern: 【(.*?)】|机场推荐[：:]
           target: ""
   ssrsub:
     <<: *PU
@@ -64,7 +64,7 @@ proxy-providers:
       upd: true
       additional-prefix: ssrsub|
       proxy-name:
-        - pattern: 机场推荐[：:]
+        - pattern: 【(.*?)】|机场推荐[：:]
           target: ""
   fanpx:
     <<: *PU
@@ -75,7 +75,7 @@ proxy-providers:
       upd: true
       additional-prefix: fanpx|
       proxy-name:
-        - pattern: 机场推荐[：:]
+        - pattern: 【(.*?)】|机场推荐[：:]
           target: ""
   fanpx1:
     <<: *PU
@@ -86,7 +86,7 @@ proxy-providers:
       upd: true
       additional-prefix: fanpx1|
       proxy-name:
-        - pattern: 机场推荐[：:]
+        - pattern: 【(.*?)】|机场推荐[：:]
           target: ""
   anaer:
     <<: *PU
@@ -97,7 +97,7 @@ proxy-providers:
       upd: true
       additional-prefix: anaer|
       proxy-name:
-        - pattern: 机场推荐[：:]
+        - pattern: 【(.*?)】|机场推荐[：:]
           target: ""
 
 # 通用配置
