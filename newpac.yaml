@@ -13,8 +13,8 @@ proxies:
   - name: v2ray-github-anytls-1
     type: anytls
     server: ip5.934618.xyz
-    port: 30099
-    password: github.com/Alvin9999-newpac/fanqiang
+    port: 44889
+    password: dongtaiwang.com
     sni: ip5.934618.xyz
     skip-cert-verify: false
     servername: ip5.934618.xyz
