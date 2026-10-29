@@ -13,7 +13,7 @@ proxies:
   - name: v2ray-github-anytls-1
     type: anytls
     server: ip5.934618.xyz
-    port: 44889
+    port: 23550
     password: dongtaiwang.com
     sni: ip5.934618.xyz
     skip-cert-verify: false
