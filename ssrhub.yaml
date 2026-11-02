@@ -21,6 +21,61 @@ PU: &PU { exclude-filter: *FilterPP, type: http, interval: 43200, health-check: 
 PF: &PF { exclude-filter: *FilterPP, type: file, interval: 43200, health-check: { enable: true, url: *UrlTest, interval: 300 } }
 # 官方配置文档: https://wiki.metacubex.one/config/proxy-providers/
 proxy-providers:
+  flNode0:
+    <<: *PU
+    interval: 3600
+    url: https://gh-proxy.com/https://raw.githubusercontent.com/flclashnode/flclashnode.github.io/main/uploads/2026/10/0-20261030.yaml
+    path: proxy_providers/flNode0_0-20261030.yaml
+    override:
+      upd: true
+      additional-prefix: flNode0|
+      proxy-name:
+        - pattern: 【(.*?)】|机场推荐[：:]
+          target: ""
+  flNode1:
+    <<: *PU
+    interval: 3600
+    url: https://gh-proxy.com/https://raw.githubusercontent.com/flclashnode/flclashnode.github.io/main/uploads/2026/10/1-20261030.yaml
+    path: proxy_providers/flNode1_1-20261030.yaml
+    override:
+      upd: true
+      additional-prefix: flNode1|
+      proxy-name:
+        - pattern: 【(.*?)】|机场推荐[：:]
+          target: ""
+  flNode2:
+    <<: *PU
+    interval: 3600
+    url: https://gh-proxy.com/https://raw.githubusercontent.com/flclashnode/flclashnode.github.io/main/uploads/2026/10/2-20261030.yaml
+    path: proxy_providers/flNode2_2-20261030.yaml
+    override:
+      upd: true
+      additional-prefix: flNode2|
+      proxy-name:
+        - pattern: 【(.*?)】|机场推荐[：:]
+          target: ""
+  flNode3:
+    <<: *PU
+    interval: 3600
+    url: https://gh-proxy.com/https://raw.githubusercontent.com/flclashnode/flclashnode.github.io/main/uploads/2026/10/3-20261030.yaml
+    path: proxy_providers/flNode3_3-20261030.yaml
+    override:
+      upd: true
+      additional-prefix: flNode3|
+      proxy-name:
+        - pattern: 【(.*?)】|机场推荐[：:]
+          target: ""
+  flNode4:
+    <<: *PU
+    interval: 3600
+    url: https://gh-proxy.com/https://raw.githubusercontent.com/flclashnode/flclashnode.github.io/main/uploads/2026/10/4-20261030.yaml
+    path: proxy_providers/flNode4_4-20261030.yaml
+    override:
+      upd: true
+      additional-prefix: flNode4|
+      proxy-name:
+        - pattern: 【(.*?)】|机场推荐[：:]
+          target: ""
   newpac:
     <<: *PU
     interval: 3600
@@ -115,7 +170,7 @@ etag-support: true
 
 # 入站
 tun:
-  enable: true
+  enable: false
   stack: mips
   auto-route: true
   strict-route: true
