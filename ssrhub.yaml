@@ -21,58 +21,58 @@ PU: &PU { exclude-filter: *FilterPP, type: http, interval: 43200, health-check: 
 PF: &PF { exclude-filter: *FilterPP, type: file, interval: 43200, health-check: { enable: true, url: *UrlTest, interval: 300 } }
 # 官方配置文档: https://wiki.metacubex.one/config/proxy-providers/
 proxy-providers:
-  flNode0:
+  fl0:
     <<: *PU
     interval: 3600
-    url: https://gh-proxy.com/https://raw.githubusercontent.com/flclashnode/flclashnode.github.io/main/uploads/2026/10/0-20261030.yaml
-    path: proxy_providers/flNode0_0-20261030.yaml
+    url: https://node.freeclashnode.com/uploads/2026/11/0-20261103.yaml
+    path: proxy_providers/fl0_0-20261103.yaml
     override:
       upd: true
-      additional-prefix: flNode0|
+      additional-prefix: fl0|
       proxy-name:
         - pattern: 【(.*?)】|机场推荐[：:]
           target: ""
-  flNode1:
+  fl1:
     <<: *PU
     interval: 3600
-    url: https://gh-proxy.com/https://raw.githubusercontent.com/flclashnode/flclashnode.github.io/main/uploads/2026/10/1-20261030.yaml
-    path: proxy_providers/flNode1_1-20261030.yaml
+    url: https://node.freeclashnode.com/uploads/2026/11/1-20261103.yaml
+    path: proxy_providers/fl1_1-20261103.yaml
     override:
       upd: true
-      additional-prefix: flNode1|
+      additional-prefix: fl1|
       proxy-name:
         - pattern: 【(.*?)】|机场推荐[：:]
           target: ""
-  flNode2:
+  fl2:
     <<: *PU
     interval: 3600
-    url: https://gh-proxy.com/https://raw.githubusercontent.com/flclashnode/flclashnode.github.io/main/uploads/2026/10/2-20261030.yaml
-    path: proxy_providers/flNode2_2-20261030.yaml
+    url: https://node.freeclashnode.com/uploads/2026/11/2-20261103.yaml
+    path: proxy_providers/fl2_2-20261103.yaml
     override:
       upd: true
-      additional-prefix: flNode2|
+      additional-prefix: fl2|
       proxy-name:
         - pattern: 【(.*?)】|机场推荐[：:]
           target: ""
-  flNode3:
+  fl3:
     <<: *PU
     interval: 3600
-    url: https://gh-proxy.com/https://raw.githubusercontent.com/flclashnode/flclashnode.github.io/main/uploads/2026/10/3-20261030.yaml
-    path: proxy_providers/flNode3_3-20261030.yaml
+    url: https://node.freeclashnode.com/uploads/2026/11/3-20261103.yaml
+    path: proxy_providers/fl3_3-20261103.yaml
     override:
       upd: true
-      additional-prefix: flNode3|
+      additional-prefix: fl3|
       proxy-name:
         - pattern: 【(.*?)】|机场推荐[：:]
           target: ""
-  flNode4:
+  fl4:
     <<: *PU
     interval: 3600
-    url: https://gh-proxy.com/https://raw.githubusercontent.com/flclashnode/flclashnode.github.io/main/uploads/2026/10/4-20261030.yaml
-    path: proxy_providers/flNode4_4-20261030.yaml
+    url: https://node.freeclashnode.com/uploads/2026/11/4-20261103.yaml
+    path: proxy_providers/fl4_4-20261103.yaml
     override:
       upd: true
-      additional-prefix: flNode4|
+      additional-prefix: fl4|
       proxy-name:
         - pattern: 【(.*?)】|机场推荐[：:]
           target: ""
