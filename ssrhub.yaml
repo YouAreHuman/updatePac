@@ -21,61 +21,6 @@ PU: &PU { exclude-filter: *FilterPP, type: http, interval: 43200, health-check: 
 PF: &PF { exclude-filter: *FilterPP, type: file, interval: 43200, health-check: { enable: true, url: *UrlTest, interval: 300 } }
 # 官方配置文档: https://wiki.metacubex.one/config/proxy-providers/
 proxy-providers:
-  fl0:
-    <<: *PU
-    interval: 3600
-    url: https://node.freeclashnode.com/uploads/2026/11/0-20261105.yaml
-    path: proxy_providers/fl0_0-20261105.yaml
-    override:
-      upd: true
-      additional-prefix: fl0|
-      proxy-name:
-        - pattern: 【(.*?)】|机场推荐[：:]
-          target: ""
-  fl1:
-    <<: *PU
-    interval: 3600
-    url: https://node.freeclashnode.com/uploads/2026/11/1-20261105.yaml
-    path: proxy_providers/fl1_1-20261105.yaml
-    override:
-      upd: true
-      additional-prefix: fl1|
-      proxy-name:
-        - pattern: 【(.*?)】|机场推荐[：:]
-          target: ""
-  fl2:
-    <<: *PU
-    interval: 3600
-    url: https://node.freeclashnode.com/uploads/2026/11/2-20261105.yaml
-    path: proxy_providers/fl2_2-20261105.yaml
-    override:
-      upd: true
-      additional-prefix: fl2|
-      proxy-name:
-        - pattern: 【(.*?)】|机场推荐[：:]
-          target: ""
-  fl3:
-    <<: *PU
-    interval: 3600
-    url: https://node.freeclashnode.com/uploads/2026/11/3-20261105.yaml
-    path: proxy_providers/fl3_3-20261105.yaml
-    override:
-      upd: true
-      additional-prefix: fl3|
-      proxy-name:
-        - pattern: 【(.*?)】|机场推荐[：:]
-          target: ""
-  fl4:
-    <<: *PU
-    interval: 3600
-    url: https://node.freeclashnode.com/uploads/2026/11/4-20261105.yaml
-    path: proxy_providers/fl4_4-20261105.yaml
-    override:
-      upd: true
-      additional-prefix: fl4|
-      proxy-name:
-        - pattern: 【(.*?)】|机场推荐[：:]
-          target: ""
   newpac:
     <<: *PU
     interval: 3600
@@ -87,6 +32,8 @@ proxy-providers:
       proxy-name:
         - pattern: 【(.*?)】|机场推荐[：:]
           target: ""
+        - pattern: B/s.*
+          target: B/s
   xrayvip:
     <<: *PU
     interval: 3600
@@ -98,6 +45,8 @@ proxy-providers:
       proxy-name:
         - pattern: 【(.*?)】|机场推荐[：:]
           target: ""
+        - pattern: B/s.*
+          target: B/s
   freeV2net:
     <<: *PU
     interval: 3600
@@ -109,6 +58,8 @@ proxy-providers:
       proxy-name:
         - pattern: 【(.*?)】|机场推荐[：:]
           target: ""
+        - pattern: B/s.*
+          target: B/s
   ssrsub:
     <<: *PU
     interval: 3600
@@ -120,6 +71,8 @@ proxy-providers:
       proxy-name:
         - pattern: 【(.*?)】|机场推荐[：:]
           target: ""
+        - pattern: B/s.*
+          target: B/s
   fanpx:
     <<: *PU
     interval: 3600
@@ -131,6 +84,8 @@ proxy-providers:
       proxy-name:
         - pattern: 【(.*?)】|机场推荐[：:]
           target: ""
+        - pattern: B/s.*
+          target: B/s
   fanpx1:
     <<: *PU
     interval: 3600
@@ -142,6 +97,8 @@ proxy-providers:
       proxy-name:
         - pattern: 【(.*?)】|机场推荐[：:]
           target: ""
+        - pattern: B/s.*
+          target: B/s
   anaer:
     <<: *PU
     interval: 3600
@@ -153,6 +110,8 @@ proxy-providers:
       proxy-name:
         - pattern: 【(.*?)】|机场推荐[：:]
           target: ""
+        - pattern: B/s.*
+          target: B/s
 
 # 通用配置
 mode: rule
@@ -170,7 +129,7 @@ etag-support: true
 
 # 入站
 tun:
-  enable: false
+  enable: true
   stack: mips
   auto-route: true
   strict-route: true
