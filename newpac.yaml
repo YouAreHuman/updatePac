@@ -18,9 +18,9 @@ proxies:
     sni: ip5.934618.xyz
     skip-cert-verify: false
     servername: ip5.934618.xyz
-  - name: ss-SS节点
+  - name: ss-SS-IPv6
     type: ss
-    server: 137.175.73.178
-    port: 35678
+    server: 2001:bc8:32d7:17b::100
+    port: 22222
     cipher: aes-256-gcm
-    password: dongtaiwang.com
+    password: github.com/Alvin9999-newpac/fanqiang
